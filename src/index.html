@@ -21,45 +21,51 @@
         <div class="header__wrapper">
           <ul class="header__list">
             <li class="header__list-element">
-              <p class="header__element-title">Доставка и оплата</p>
+              <a href="#" class="header__element-title">Доставка и оплата</a>
             </li>
             <li class="header__list-element">
-              <p class="header__element-title">Возврат и обмен</p>
+              <a href="#" class="header__element-title">Возврат и обмен</a>
             </li>
           </ul>
-          <img
-            class="header__brand"
-            src="./images/header/main-title.jpg"
-            alt="Логотип"
-          />
+          <a href="./index.html"
+            ><img
+              class="header__brand"
+              src="./images/header/main-logo.png"
+              alt="Логотип"
+          /></a>
+
           <a class="header__tel" href="tel:+88002007242">8 800 200 7242</a>
           <ul class="header__account">
             <li class="header__account-element">
-              <a href="#">
+              <a href="#" class="header__icon-link account">
                 <svg class="header__icon" width="18" height="18">
                   <use href="./images/sprite.svg#account"></use>
                 </svg>
+                <span class="header__icon-account"></span>
               </a>
             </li>
             <li class="header__account-element">
-              <a href="#">
+              <a href="#" class="header__icon-link heart">
                 <svg class="header__icon" width="18" height="18">
                   <use href="./images/sprite.svg#heart"></use>
                 </svg>
+                <span class="header__icon-heart active">5</span>
               </a>
             </li>
             <li class="header__account-element">
-              <a href="#">
+              <a href="#" class="header__icon-link bag">
                 <svg class="header__icon" width="18" height="18">
                   <use href="./images/sprite.svg#shopping-bag"></use>
                 </svg>
+                <span class="header__icon-bag active">12</span>
               </a>
             </li>
             <li class="header__account-element">
-              <a href="#">
+              <a href="#" class="header__icon-link search">
                 <svg class="header__icon" width="18" height="18">
                   <use href="./images/sprite.svg#search"></use>
                 </svg>
+                <span class="header__icon-search"></span>
               </a>
             </li>
           </ul>
@@ -67,19 +73,19 @@
         <nav class="header-nav">
           <ul class="header__nav-list">
             <li class="header__nav-element">
-              <p class="header__nav-title">Каталог</p>
+              <a href="#" class="header__nav-title">Каталог</a>
             </li>
             <li class="header__nav-element">
-              <p class="header__nav-title">NEW</p>
+              <a href="#" class="header__nav-title">NEW</a>
             </li>
             <li class="header__nav-element">
-              <p class="header__nav-title">SALE</p>
+              <a href="#" class="header__nav-title">SALE</a>
             </li>
             <li class="header__nav-element">
-              <p class="header__nav-title">Магазины</p>
+              <a href="#" class="header__nav-title">Магазины</a>
             </li>
             <li class="header__nav-element">
-              <p class="header__nav-title">Покупателям</p>
+              <a href="#" class="header__nav-title">Покупателям</a>
             </li>
           </ul>
         </nav>
@@ -89,6 +95,7 @@
       <section class="hero">
         <div class="hero__main">
           <div class="container container__relative">
+            <h1 hidden>hero</h1>
             <h2 class="hero__title">
               Скидка <span class="hero__title-mod">50%</span> на все!
             </h2>
@@ -96,6 +103,7 @@
               Бесплатная доставка
               <span class="hero__subtitle-mod">от 7 000 руб.</span>
             </p>
+            <button type="button" class="hero__btn">Подробнее</button>
             <svg class="hero__logo">
               <use href="./images/sprite.svg#Vector-logo"></use>
             </svg>
