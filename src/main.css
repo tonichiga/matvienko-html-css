@@ -967,6 +967,9 @@ a {
 
 .new__backdrop-shop-btn,
 .new__backdrop-buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   width: 160px;
   height: 40px;
@@ -983,6 +986,8 @@ a {
   font-weight: 700;
   font-size: 13px;
   line-height: 17px;
+  border: solid 1px #000000;
+  border-radius: 2px;
 }
 
 .new__backdrop-buy-btn {
@@ -993,6 +998,8 @@ a {
   font-size: 13px;
   line-height: 17px;
   color: #000000;
+  border: solid 1px;
+  border-radius: 2px;
 }
 
 .new__backdrop-more {
