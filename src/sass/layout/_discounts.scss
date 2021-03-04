@@ -65,7 +65,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #000000;
+  color: $second-color;
 }
 .discounts__article-subtitle {
   font-family: Roboto, sans-serif;
@@ -88,7 +88,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  color: #000000;
+  color: $second-color;
 }
 .backdrop-wrapper {
   position: relative;
@@ -101,7 +101,7 @@
   box-sizing: border-box;
   height: 405px;
   width: 100%;
-  background-color: rgba($color: #ffffff, $alpha: 0.6);
+  background-color: rgba($color: $primary-color, $alpha: 0.6);
   padding: 250px 71px 23px 71px;
 
   transition: transform 250ms ease-in-out;
@@ -118,7 +118,7 @@
   box-sizing: border-box;
   height: 90px;
   width: 60px;
-  //   background-color: rgba($color: #ffffff, $alpha: 0.6);
+  //   background-color: rgba($color: $primary-color, $alpha: 0.6);
   transform: translateX(60px);
   transition: transform 250ms ease-in-out;
 }
@@ -147,9 +147,9 @@
   font-family: Roboto, sans-serif;
   opacity: 1;
   margin-bottom: 10px;
-  background-color: #000000;
-  border: 1px solid #000000;
-  color: #ffffff;
+  background-color: $second-color;
+  border: 1px solid $second-color;
+  color: $primary-color;
   border-radius: 2px;
   font-weight: 700;
   font-size: 13px;
@@ -162,14 +162,14 @@
   font-weight: 700;
   font-size: 13px;
   line-height: 17px;
-  color: #000000;
+  color: $second-color;
 }
 .discounts__backdrop-more {
   position: relative;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 17px;
-  color: #000000;
+  color: $second-color;
   text-decoration: none;
   //   border-bottom: 2px solid #000;
 }
@@ -179,7 +179,7 @@
   left: 0;
   content: "";
   height: 2px;
-  background-color: #000000;
+  background-color: $second-color;
   width: 100%;
 }
 
@@ -199,8 +199,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  background-color: #000000;
+  color: $primary-color;
+  background-color: $second-color;
   width: 90px;
   height: 25px;
   margin: 0;
@@ -212,10 +212,18 @@
   width: 191px;
   height: 40px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: $primary-color;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 17px;
-  color: #000000;
+  color: $second-color;
   border-radius: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.discounts__more-btn:hover,
+.discounts__more-btn:focus {
+  background-color: $second-color;
+  color: $primary-color;
 }

@@ -26,7 +26,7 @@
   font-style: italic;
   font-size: 70px;
   line-height: 90px;
-  color: #000000;
+  color: $second-color;
   margin-bottom: 32px;
 }
 .hero__title-mod,
@@ -40,7 +40,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
+  color: $second-color;
   margin: 0;
   margin-bottom: 48px;
 }
@@ -59,12 +59,18 @@
   font-family: Roboto, sans-serif;
   width: 192px;
   height: 40px;
-  background-color: #000000;
+  background-color: $second-color;
   border-radius: 2px;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 17px;
-  color: #ffffff;
+  color: $primary-color;
   cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: $primary-color;
+  color: $second-color;
 }

@@ -3,14 +3,14 @@
   width: 191px;
   height: 40px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: $primary-color;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 17px;
-  color: #000000;
+  color: $second-color;
   border-radius: 2px;
 }
 .button.dark {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: $second-color;
+  color: $primary-color;
 }

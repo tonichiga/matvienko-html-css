@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 46px;
-  color: #000000;
+  color: $second-color;
   margin: 0;
   margin-bottom: 39px;
 }
@@ -22,14 +22,18 @@
   margin-bottom: 15px;
 }
 .follow__address {
+  display: block;
   text-align: center;
   font-family: Georgia;
   font-style: italic;
   font-weight: normal;
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
+  color: $second-color;
   margin: 0;
+}
+.follow__address-icon {
+  display: block;
 }
 .follow__list {
   display: flex;
@@ -55,21 +59,45 @@
   height: 18px;
 }
 .follow__arrow.right {
-  fill: #ffffff;
+  fill: $second-color;
 }
 .follow__arrow.left {
+  fill: $second-color;
 }
 .follow__slider-btn.right,
 .follow__slider-btn.left {
+  cursor: pointer;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: none;
 }
 .follow__slider-btn.right {
-  background-color: #000000;
+  background-color: $primary-color;
+  transition: 250ms ease-in-out;
 }
+
+.follow__slider-btn.right:hover,
+.follow__slider-btn.right:focus {
+  & .follow__arrow.right {
+    fill: $primary-color;
+  }
+  background-color: $second-color;
+  color: $primary-color;
+}
+
+.follow__slider-btn.left:hover,
+.follow__slider-btn.left:focus {
+  & .follow__arrow.left {
+    fill: $primary-color;
+  }
+  background-color: $second-color;
+  color: $primary-color;
+}
+
 .follow__slider-btn.left {
+  background-color: $primary-color;
+  transition: 250ms ease-in-out;
   background-color: transparent;
 }
 .follow__slider-wrapper,
@@ -87,7 +115,7 @@
   fill: #e5e5e5;
 }
 .follow__slider-dots.active {
-  fill: #000000;
+  fill: $second-color;
 }
 .follow__slider-dots:not(:last-child) {
   margin-right: 14px;

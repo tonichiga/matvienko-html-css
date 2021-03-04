@@ -386,6 +386,12 @@ a {
   line-height: 15px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
+  transition: 250ms ease-in-out;
+}
+
+.header__element-title:hover,
+.header__element-title:focus {
+  color: #000000;
 }
 
 .header__brand {
@@ -394,12 +400,32 @@ a {
 }
 
 .header__tel {
+  position: relative;
   margin-right: 100px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
+}
+
+.header__tel:hover::before,
+.header__tel:focus::before {
+  width: 100%;
+}
+
+.header__tel::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+  height: 2px;
+  border-radius: 5px;
+  width: 0;
+  left: 50%;
+  bottom: 0px;
+  position: absolute;
+  transition: width 0.25s ease-in-out;
+  transform: translateX(-50%);
 }
 
 .header__account-element:not(:last-child) {
@@ -425,6 +451,7 @@ a {
 }
 
 .header__nav-title {
+  position: relative;
   font-weight: 700;
   font-size: 13px;
   line-height: 17px;
@@ -432,14 +459,33 @@ a {
   margin: 0;
 }
 
+.header__nav-title:hover::before,
+.header__nav-title:focus::before {
+  width: 100%;
+}
+
+.header__nav-title::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+  height: 2px;
+  border-radius: 5px;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  position: absolute;
+  transition: width 0.25s ease-in-out;
+  transform: translateX(-50%);
+}
+
 .header__icon-link {
   position: relative;
 }
 
-.header__icon-heart.active,
-.header__icon-bag.active,
-.header__icon-account.active,
-.header__icon-search.active {
+.header__icon-heart,
+.header__icon-bag,
+.header__icon-account,
+.header__icon-search {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -534,6 +580,13 @@ a {
   line-height: 17px;
   color: #ffffff;
   cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .presentation {
@@ -586,8 +639,8 @@ a {
 
 .presentation__slider-button {
   position: absolute;
-  top: -130px;
-  right: 0;
+  top: 100px;
+  right: 182px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -608,22 +661,47 @@ a {
 }
 
 .presentation__button.right {
-  margin-left: 89px;
-  background-color: black;
+  margin-left: 68px;
+  background-color: #ffffff;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
 }
 
 .presentation__button.left {
-  margin-right: 89px;
+  margin-right: 68px;
   background-color: #ffffff;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
 }
 
 .presentation__icon-arrow.right {
-  fill: #ffffff;
-  opacity: 1;
+  fill: #000000;
 }
 
 .presentation__icon-arrow.left {
   fill: #000000;
+}
+
+.presentation__button.right:hover,
+.presentation__button.right:focus {
+  background-color: #000000;
+}
+
+.presentation__button.right:hover .presentation__icon-arrow.right,
+.presentation__button.right:focus .presentation__icon-arrow.right {
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.presentation__button.left:hover,
+.presentation__button.left:focus {
+  background-color: #000000;
+}
+
+.presentation__button.left:hover .presentation__icon-arrow.left,
+.presentation__button.left:focus .presentation__icon-arrow.left {
+  fill: #ffffff;
+  opacity: 1;
 }
 
 .presentation__icon-dot {
@@ -686,6 +764,18 @@ a {
   border-radius: 50%;
   background-color: #000000;
   border-color: #ffffff;
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.presentation__article-button:hover,
+.presentation__article-button:focus {
+  background-color: #ffffff;
+}
+
+.presentation__article-button:hover .presentation__article-icon__arrow-right,
+.presentation__article-button:focus .presentation__article-icon__arrow-right {
+  fill: #000000;
 }
 
 .presentation__article-icon__arrow-right {
@@ -718,14 +808,22 @@ a {
   background-color: #000000;
   margin: 0;
   border-radius: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.presentation__main-button:hover,
+.presentation__main-button:focus {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .presentation__main-logo {
   width: 217px;
   height: 133px;
   position: absolute;
-  top: 185px;
-  right: 45px;
+  top: 250px;
+  right: 227px;
   fill: #000000;
 }
 
@@ -954,6 +1052,13 @@ a {
   color: #000000;
   border-radius: 2px;
   cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.new__more-btn:hover,
+.new__more-btn:focus {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .discounts__title {
@@ -1174,6 +1279,14 @@ a {
   line-height: 17px;
   color: #000000;
   border-radius: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.discounts__more-btn:hover,
+.discounts__more-btn:focus {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .follow {
@@ -1201,6 +1314,7 @@ a {
 }
 
 .follow__address {
+  display: block;
   text-align: center;
   font-family: Georgia;
   font-style: italic;
@@ -1209,6 +1323,10 @@ a {
   line-height: 31px;
   color: #000000;
   margin: 0;
+}
+
+.follow__address-icon {
+  display: block;
 }
 
 .follow__list {
@@ -1240,11 +1358,16 @@ a {
 }
 
 .follow__arrow.right {
-  fill: #ffffff;
+  fill: #000000;
+}
+
+.follow__arrow.left {
+  fill: #000000;
 }
 
 .follow__slider-btn.right,
 .follow__slider-btn.left {
+  cursor: pointer;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1252,10 +1375,35 @@ a {
 }
 
 .follow__slider-btn.right {
+  background-color: #ffffff;
+  transition: 250ms ease-in-out;
+}
+
+.follow__slider-btn.right:hover,
+.follow__slider-btn.right:focus {
   background-color: #000000;
+  color: #ffffff;
+}
+
+.follow__slider-btn.right:hover .follow__arrow.right,
+.follow__slider-btn.right:focus .follow__arrow.right {
+  fill: #ffffff;
+}
+
+.follow__slider-btn.left:hover,
+.follow__slider-btn.left:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.follow__slider-btn.left:hover .follow__arrow.left,
+.follow__slider-btn.left:focus .follow__arrow.left {
+  fill: #ffffff;
 }
 
 .follow__slider-btn.left {
+  background-color: #ffffff;
+  transition: 250ms ease-in-out;
   background-color: transparent;
 }
 
@@ -1411,6 +1559,14 @@ a {
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.footer__form-btn:hover,
+.footer__form-btn:focus {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .second {
