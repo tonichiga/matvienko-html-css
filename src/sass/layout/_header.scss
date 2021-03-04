@@ -113,10 +113,10 @@
 .header__icon-link {
   position: relative;
 }
-.header__icon-heart,
-.header__icon-bag,
-.header__icon-account,
-.header__icon-search {
+.header__icon-heart.active,
+.header__icon-bag.active,
+.header__icon-account.active,
+.header__icon-search.active {
   position: absolute;
   display: flex;
   justify-content: center;

@@ -482,10 +482,10 @@ a {
   position: relative;
 }
 
-.header__icon-heart,
-.header__icon-bag,
-.header__icon-account,
-.header__icon-search {
+.header__icon-heart.active,
+.header__icon-bag.active,
+.header__icon-account.active,
+.header__icon-search.active {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -533,6 +533,7 @@ a {
   margin: 0;
   font-family: Georgia;
   font-style: italic;
+  font-weight: 400;
   font-size: 70px;
   line-height: 90px;
   color: #000000;
@@ -1224,19 +1225,22 @@ a {
 
 .discounts__backdrop-more {
   position: relative;
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 17px;
   color: #000000;
   text-decoration: none;
+  margin-top: 0;
 }
 
 .discounts__backdrop-more::after {
   position: absolute;
+  display: inline-block;
   bottom: 0;
   left: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: #000000;
   width: 100%;
 }
@@ -1493,6 +1497,10 @@ a {
   margin-top: 0;
   margin-bottom: 17px;
   text-transform: uppercase;
+}
+
+.footer__contacts {
+  padding-top: 5px;
 }
 
 .footer__contacts-address {

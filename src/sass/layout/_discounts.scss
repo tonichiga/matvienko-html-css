@@ -166,19 +166,22 @@
 }
 .discounts__backdrop-more {
   position: relative;
+  display: inline-block;
   font-family: Roboto, sans-serif;
   font-size: 13px;
   line-height: 17px;
   color: $second-color;
   text-decoration: none;
+  margin-top: 0;
   //   border-bottom: 2px solid #000;
 }
 .discounts__backdrop-more::after {
   position: absolute;
+  display: inline-block;
   bottom: 0;
   left: 0;
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: $second-color;
   width: 100%;
 }
