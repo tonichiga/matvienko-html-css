@@ -1,0 +1,220 @@
+.discounts__title {
+  position: relative;
+  text-align: center;
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  margin-right: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.discounts__article-img {
+  height: 400px;
+}
+// .discounts__title::before {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   background-image: url(./images/header/icons/Vector-logo.svg);
+//   width: 39px;
+//   height: 24px;
+//   transform: translateY(-50%);
+// }
+
+// .discounts__title::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   background-image: url(./images/header/icons/Vector-logo.svg);
+//   width: 39px;
+//   height: 24px;
+//   transform: translateY(-50%);
+// }
+
+.discounts__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 45px;
+}
+.discounts__logo {
+  width: 39px;
+  height: 24px;
+  opacity: 0.2;
+}
+.discounts__logo.left {
+  margin-right: 70px;
+}
+.discounts__articles-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 54px;
+}
+.discounts__article:not(:last-child) {
+  margin-right: 30px;
+}
+.discounts__article-title {
+  font-family: Roboto, sans-serif;
+  margin-top: 0;
+  margin-bottom: 11px;
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.discounts__article-subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  color: #c4c4c4;
+}
+.discounts__article-prevprice {
+  margin-right: 33px;
+  text-decoration: line-through;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+.discounts__article-price {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+.backdrop-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.discounts__backdrop {
+  position: absolute;
+  //   top: 100%;
+  z-index: 300;
+  box-sizing: border-box;
+  height: 405px;
+  width: 100%;
+  background-color: rgba($color: #ffffff, $alpha: 0.6);
+  padding: 250px 71px 23px 71px;
+
+  transition: transform 250ms ease-in-out;
+}
+.discounts__backdrop-mini {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 4px;
+  right: 0;
+  z-index: 300;
+  box-sizing: border-box;
+  height: 90px;
+  width: 60px;
+  //   background-color: rgba($color: #ffffff, $alpha: 0.6);
+  transform: translateX(60px);
+  transition: transform 250ms ease-in-out;
+}
+.article__link {
+  text-decoration: none;
+}
+.article__link {
+  &:hover .discounts__backdrop,
+  &:focus .discounts__backdrop {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  &:hover .discounts__backdrop-mini,
+  &:focus .discounts__backdrop-mini {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.discounts__backdrop-shop-btn,
+.discounts__backdrop-buy-btn {
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+}
+.discounts__backdrop-shop-btn {
+  font-family: Roboto, sans-serif;
+  opacity: 1;
+  margin-bottom: 10px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+}
+.discounts__backdrop-buy-btn {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+.discounts__backdrop-more {
+  position: relative;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  //   border-bottom: 2px solid #000;
+}
+.discounts__backdrop-more::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 2px;
+  background-color: #000000;
+  width: 100%;
+}
+
+.discounts__icon-fullscreen {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 18px;
+}
+.discounts__icon-heart {
+  width: 19px;
+  height: 19px;
+}
+.discounts__sale-title {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #000000;
+  width: 90px;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  border-radius: 0px 100px 100px 0px;
+}
+.discounts__more-btn {
+  display: block;
+  width: 191px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}

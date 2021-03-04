@@ -1,0 +1,178 @@
+.presentation {
+  position: relative;
+  padding-top: 50px;
+}
+.main-bcg {
+  position: relative;
+}
+.presintation__main {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  z-index: -1;
+  background-image: linear-gradient(
+      to right,
+      rgba(#e5e5e5, 0.3),
+      rgba(#e5e5e5, 0.3)
+    ),
+    url(./images/presentation/presentation-main.jpg);
+  height: 554px;
+  width: 1076px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+.presentation__article {
+  position: relative;
+}
+.presentation__article.right {
+  text-align: right;
+}
+.presentation__article-wrapper.right {
+  text-align: left;
+  left: 530px;
+  top: 95px;
+  border-radius: 2px 2px 2px 20px;
+}
+.presentation__article-wrapper {
+  position: absolute;
+  width: 351px;
+  height: 187px;
+  top: 65px;
+  left: 330px;
+  padding: 39px 50px 40px 38px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 2px 2px 20px 2px;
+}
+.presentation__slider-button {
+  position: absolute;
+  top: -130px;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.presentation__icon-arrow {
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+}
+.presentation__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+}
+.presentation__button.right {
+  margin-left: 89px;
+  background-color: black;
+}
+.presentation__button.left {
+  margin-right: 89px;
+  background-color: #ffffff;
+}
+.presentation__icon-arrow.right {
+  fill: #ffffff;
+  opacity: 1;
+}
+.presentation__icon-arrow.left {
+  fill: #000000;
+}
+.presentation__icon-dot {
+  width: 6px;
+  height: 6px;
+  margin-right: 14px;
+}
+.presentation__icon-dot.innactive {
+  fill: #e5e5e5;
+}
+.presentation__article-title {
+  font-family: Georgia, sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.presentation__article-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  margin-bottom: 36px;
+}
+.presentation__article-price {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 128%;
+  text-align: center;
+  color: #ffffff;
+}
+.price {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 128%;
+  text-align: center;
+  color: #ffffff;
+}
+.presentation__artcle-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.presentation__article-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  border-color: #ffffff;
+}
+.presentation__article-icon__arrow-right {
+  fill: #ffffff;
+  width: 12px;
+  height: 12px;
+}
+.presentation__main-title {
+  position: absolute;
+  bottom: 155px;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+  margin: 0;
+}
+
+.presentation__main-button {
+  position: absolute;
+  z-index: 220;
+  bottom: 380px;
+  left: 293px;
+  padding: 11px 39px 12px 39px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0;
+}
+.presentation__main-logo {
+  width: 217px;
+  height: 133px;
+  position: absolute;
+  top: 185px;
+  right: 45px;
+  fill: #000000;
+}
+.presentation__brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

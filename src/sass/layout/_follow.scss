@@ -1,0 +1,94 @@
+.follow {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.follow__title {
+  text-align: center;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.follow__icon-insta {
+  display: block;
+  margin: 0 auto;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+}
+.follow__address {
+  text-align: center;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  margin: 0;
+}
+.follow__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px 0 10px;
+}
+.follow__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow__address-wrapper {
+  margin-bottom: 48px;
+}
+.follow__list-element:not(:last-child) {
+  margin-right: 20px;
+}
+.follow__arrow.right,
+.follow__arrow.left {
+  width: 18px;
+  height: 18px;
+}
+.follow__arrow.right {
+  fill: #ffffff;
+}
+.follow__arrow.left {
+}
+.follow__slider-btn.right,
+.follow__slider-btn.left {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+}
+.follow__slider-btn.right {
+  background-color: #000000;
+}
+.follow__slider-btn.left {
+  background-color: transparent;
+}
+.follow__slider-wrapper,
+.follow__slider-dots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow__slider-wrapper {
+  margin-bottom: 35px;
+}
+.follow__slider-dots {
+  width: 6px;
+  height: 6px;
+  fill: #e5e5e5;
+}
+.follow__slider-dots.active {
+  fill: #000000;
+}
+.follow__slider-dots:not(:last-child) {
+  margin-right: 14px;
+}
