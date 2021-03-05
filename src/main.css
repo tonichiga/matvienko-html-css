@@ -457,6 +457,7 @@ a {
   line-height: 17px;
   color: #000000;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .header__nav-title:hover::before,
@@ -824,7 +825,7 @@ a {
   height: 133px;
   position: absolute;
   top: 250px;
-  right: 227px;
+  right: 240px;
   fill: #000000;
 }
 
